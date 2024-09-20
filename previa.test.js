@@ -3,7 +3,7 @@ import {
   maiorNumero,
   verificarParOuImpar,
   //contarCaracter,
- // atualizarPropriedade,
+  atualizarPropriedade,
 } from "./preProva.js";
 
 // Teste para a função maiorNumero
@@ -42,17 +42,17 @@ describe("verificarParOuImpar", () => {
 //   });
 // });
 
-// // Teste para a função atualizarPropriedade
-// describe("atualizarPropriedade", () => {
-//   it("deve atualizar uma propriedade existente", () => {
-//     const objeto = { nome: "João", idade: 25 };
-//     expect(atualizarPropriedade(objeto, "idade", 30)).toEqual({
-//       nome: "João",
-//       idade: 30,
-//     });
-//   });
-//   it("deve retornar null se a propriedade não existir", () => {
-//     const objeto = { nome: "João" };
-//     expect(atualizarPropriedade(objeto, "altura", 1.8)).toBe(null);
-//   });
-//});
+// Teste para a função atualizarPropriedade
+describe("atualizarPropriedade", () => {
+  it("deve atualizar uma propriedade existente", () => {
+    const objeto = { nome: "João", idade: 25 };
+    expect(atualizarPropriedade(objeto, "idade", 30)).toEqual({
+      nome: "João",
+      idade: 30,
+    });
+  });
+  it("deve retornar null se a propriedade não existir", () => {
+    const objeto = { nome: "João" };
+    expect(atualizarPropriedade(objeto, "altura", 1.8)).toBe(null);
+  });
+});
